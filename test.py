@@ -31,17 +31,17 @@ def remove_pages_from_pdf(pdf_path, pages_to_remove, output_path):
 st.markdown(
     """
     <head>
-        <title>PDF Page Remover</title>
-        <meta name="description" content="A simple tool to remove pages from PDF files. Upload, select pages, and download the edited file.">
-        <meta name="keywords" content="PDF, remove pages, edit PDF, PDF tool">
-        <meta name="author" content="Your Name">
-        <meta property="og:title" content="PDF Page Remover">
-        <meta property="og:description" content="A simple and easy-to-use tool to remove pages from PDF files.">
-        <meta property="og:image" content="https://example.com/preview.png">
-        <meta property="og:url" content="https://example.com/">
+        <title>PDF Slicer - Remove Pages from PDF</title>
+        <meta name="description" content="PDF Slicer: A simple and easy-to-use tool to remove pages from PDF files. Upload your file, select pages, and download the edited version. Fast, secure, and free.">
+        <meta name="keywords" content="PDF, remove pages, PDF tool, edit PDF, free PDF editor">
+        <meta name="author" content="Kamil">
+        <meta property="og:title" content="PDF Slicer - Remove Pages from PDF">
+        <meta property="og:description" content="Easily remove pages from PDF files. Fast and user-friendly tool for PDF editing. Try now!">
+        <meta property="og:image" content="https://pdfslicer.streamlit.app/static/preview.png">
+        <meta property="og:url" content="https://pdfslicer.streamlit.app/">
         <meta property="og:type" content="website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://pdfslicer.streamlit.app/static/favicon.ico" type="image/x-icon">
     </head>
     """,
     unsafe_allow_html=True
