@@ -35,6 +35,7 @@ st.markdown(
         <meta name="description" content="PDF Slicer: A simple and easy-to-use tool to remove pages from PDF files. Upload your file, select pages, and download the edited version. Fast, secure, and free.">
         <meta name="keywords" content="PDF, remove pages, PDF tool, edit PDF, free PDF editor">
         <meta name="author" content="Kamil">
+        <meta name="google-site-verification" content="googlee5bfa023f20e3180.html" />
         <meta property="og:title" content="PDF Slicer - Remove Pages from PDF">
         <meta property="og:description" content="Easily remove pages from PDF files. Fast and user-friendly tool for PDF editing. Try now!">
         <meta property="og:image" content="https://pdfslicer.streamlit.app/static/preview.png">
