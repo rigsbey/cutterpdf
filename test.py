@@ -27,23 +27,12 @@ def remove_pages_from_pdf(pdf_path, pages_to_remove, output_path):
         writer.write(output_file)
 
 
-# SEO and meta-tags for better indexing
+# Добавление мета-тега Google в тело страницы
 st.markdown(
     """
-    <head>
-        <title>PDF Slicer - Remove Pages from PDF</title>
-        <meta name="description" content="PDF Slicer: A simple and easy-to-use tool to remove pages from PDF files. Upload your file, select pages, and download the edited version. Fast, secure, and free.">
-        <meta name="keywords" content="PDF, remove pages, PDF tool, edit PDF, free PDF editor">
-        <meta name="author" content="Kamil">
+    <div style="display: none;">
         <meta name="google-site-verification" content="aAyfkeeM2Px0gDxLIQIOGAR72U0S5Dvjljl8t0MbS-4" />
-        <meta property="og:title" content="PDF Slicer - Remove Pages from PDF">
-        <meta property="og:description" content="Easily remove pages from PDF files. Fast and user-friendly tool for PDF editing. Try now!">
-        <meta property="og:image" content="https://pdfslicer.streamlit.app/static/preview.png">
-        <meta property="og:url" content="https://pdfslicer.streamlit.app/">
-        <meta property="og:type" content="website">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="https://pdfslicer.streamlit.app/static/favicon.ico" type="image/x-icon">
-    </head>
+    </div>
     """,
     unsafe_allow_html=True
 )
