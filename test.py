@@ -26,8 +26,28 @@ def remove_pages_from_pdf(pdf_path, pages_to_remove, output_path):
     with open(output_path, "wb") as output_file:
         writer.write(output_file)
 
+# SEO-оптимизация
+st.markdown(
+    """
+    <head>
+        <title>PDF Slicer - Easily Remove Pages from PDFs</title>
+        <meta name="description" content="PDF Slicer: A simple tool to remove pages from PDF files. Upload, select pages, and download the edited file.">
+        <meta name="keywords" content="PDF, remove pages, edit PDF, PDF tool, Streamlit">
+        <meta name="author" content="Kamil">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="PDF Slicer - Easily Remove Pages from PDFs">
+        <meta property="og:description" content="Quickly and easily remove pages from your PDF files. Fast, secure, and free!">
+        <meta property="og:image" content="https://pdfslicer.streamlit.app/static/og-preview.png">
+        <meta property="og:url" content="https://pdfslicer.streamlit.app/">
+        <meta property="og:type" content="website">
+        <link rel="icon" href="https://pdfslicer.streamlit.app/static/favicon.ico" type="image/x-icon">
+        <link rel="canonical" href="https://pdfslicer.streamlit.app/">
+    </head>
+    """,
+    unsafe_allow_html=True
+)
 
-# Добавление мета-тега Google в тело страницы
+# Google Search Console verification
 st.markdown(
     """
     <div style="display: none;">
@@ -37,8 +57,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
+# Заголовок приложения
 st.title("PDF Page Remover")
 
+# Функционал загрузки PDF-файлов
 uploaded_file = st.file_uploader("Upload PDF", type="pdf")
 
 if uploaded_file:
@@ -61,7 +84,7 @@ if uploaded_file:
         value=1
     )
 
-    # Generate and display the thumbnail for the current page
+    # Генерация и отображение миниатюры страницы
     st.write(f"**Page {current_page} of {total_pages}**")
     image = generate_thumbnail(pdf_path, current_page - 1)
     st.image(image, caption=f"Page {current_page}", use_container_width=True)
