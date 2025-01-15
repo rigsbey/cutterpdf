@@ -27,6 +27,26 @@ def remove_pages_from_pdf(pdf_path, pages_to_remove, output_path):
         writer.write(output_file)
 
 
+# SEO and meta-tags for better indexing
+st.markdown(
+    """
+    <head>
+        <title>PDF Page Remover</title>
+        <meta name="description" content="A simple tool to remove pages from PDF files. Upload, select pages, and download the edited file.">
+        <meta name="keywords" content="PDF, remove pages, edit PDF, PDF tool">
+        <meta name="author" content="Your Name">
+        <meta property="og:title" content="PDF Page Remover">
+        <meta property="og:description" content="A simple and easy-to-use tool to remove pages from PDF files.">
+        <meta property="og:image" content="https://example.com/preview.png">
+        <meta property="og:url" content="https://example.com/">
+        <meta property="og:type" content="website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+    </head>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("PDF Page Remover")
 
 uploaded_file = st.file_uploader("Upload PDF", type="pdf")
